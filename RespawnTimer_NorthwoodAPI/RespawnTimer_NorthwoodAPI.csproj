@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AssemblyName>RespawnTimer_NorthwoodAPI</AssemblyName>
+        <RootNamespace>RespawnTimer_NorthwoodAPI</RootNamespace>
+        <LangVersion>10</LangVersion>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <TargetName>RespawnTimer-NW</TargetName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="CommandSystem.Core">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\CommandSystem.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\Mirror.dll</HintPath>
+        </Reference>
+        <Reference Include="NorthwoodLib">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\NorthwoodLib.dll</HintPath>
+        </Reference>
+        <Reference Include="PluginAPI">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\PluginAPI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+          <HintPath>..\..\wow\SCPSL_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="YamlDotNet" HintPath="$(EXILED_REFERENCES)\YamlDotNet.dll" />
+    </ItemGroup>
+
+</Project>
