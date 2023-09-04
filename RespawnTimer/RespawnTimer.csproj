@@ -12,25 +12,28 @@
 
     <ItemGroup>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\wow\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\wow\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Mirror">
-      <HintPath>..\..\wow\SCPSL_Data\Managed\Mirror.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\wow\SCPSL_Data\Managed\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\..\..\Desktop\wow\SCPSL_Data\Managed\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\wow\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\wow\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\wow\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\wow\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\wow\SCPSL_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\wow\SCPSL_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="YamlDotNet" HintPath="$(EXILED_REFERENCES)\YamlDotNet.dll" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="EXILED" Version="8.0.1" />
+    <PackageReference Include="EXILED" Version="8.1.0" />
   </ItemGroup>
   
 </Project>
