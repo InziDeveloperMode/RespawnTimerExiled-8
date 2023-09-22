@@ -53,21 +53,21 @@
             ServerEvent.ReloadedConfigs += OnReloaded;
             PlayerEvent.Dying += EventHandler.OnDying;
 
-            foreach (IPlugin<IConfig> plugin in Loader.Plugins)
-            {
-                switch (plugin.Name)
-                {
-                    case "Serpents Hand" when plugin.Config.IsEnabled:
-                        API.API.SerpentsHandTeam.Init(plugin.Assembly);
-                        Log.Debug("Serpents Hand plugin detected!");
-                        break;
+            //foreach (IPlugin<IConfig> plugin in Loader.Plugins)
+            //{
+            //    switch (plugin.Name)
+            //    {
+            //        case "Serpents Hand" when plugin.Config.IsEnabled:
+            //            API.API.SerpentsHandTeam.Init(plugin.Assembly);
+            //            Log.Debug("Serpents Hand plugin detected!");
+            //            break;
 
-                    case "UIURescueSquad" when plugin.Config.IsEnabled:
-                        API.API.UiuTeam.Init(plugin.Assembly);
-                        Log.Debug("UIURescueSquad plugin detected!");
-                        break;
-                }
-            }
+            //        case "UIURescueSquad" when plugin.Config.IsEnabled:
+            //            API.API.UiuTeam.Init(plugin.Assembly);
+            //            Log.Debug("UIURescueSquad plugin detected!");
+            //            break;
+            //    }
+            //}
 
             if (!Config.ReloadTimerEachRound)
                 OnReloaded();
